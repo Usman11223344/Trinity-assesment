@@ -22,7 +22,11 @@ extension UIImage {
 
 extension UIImageView {
     
-    
+    func makeRounded() {
+        layer.masksToBounds = false
+        layer.cornerRadius = self.frame.height / 2
+        clipsToBounds = true
+    }
     
     func convertImageToBase64(image: UIImage) -> String {
         
