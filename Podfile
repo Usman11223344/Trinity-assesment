@@ -8,6 +8,7 @@ target 'Assessment' do
   # Pods for Assessment
     pod 'MBProgressHUD', '~> 1.2.0'
     pod 'Alamofire'
+    pod 'IQKeyboardManagerSwift'
 
   target 'AssessmentTests' do
     inherit! :search_paths

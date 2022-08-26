@@ -10,16 +10,16 @@ protocol AppRouter: AnyObject {
 final class AppCoordinator {
     
     private var window: UIWindow
-    private var assessmentCoordinator: AssessmentCoordinator?
-    
+    private var contactsCoordinator: ContactsCoordinator?
+
     init(window: UIWindow) {
         self.window = window
     }
     
     // MARK: - Private Methods
-    private func showAssessmentController() {
-        self.assessmentCoordinator = AssessmentCoordinator.init(window: window)
-        self.assessmentCoordinator?.start()
+    private func showContactsController() {
+        self.contactsCoordinator = ContactsCoordinator.init(window: window)
+        self.contactsCoordinator?.start()
     }
 }
 
@@ -34,6 +34,6 @@ extension AppCoordinator: AppRouter {
             // Fallback on earlier versions
         }
         self.window.makeKeyAndVisible()
-        showAssessmentController()
+        showContactsController()
     }
 }

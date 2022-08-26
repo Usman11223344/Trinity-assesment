@@ -12,9 +12,7 @@ import UIKit
 extension UIColor {
     
     struct Color {
-        static let purple: UIColor = UIColor(named: "PurpleColor") ?? UIColor.init(hexString: "845cfc")
-        static let white: UIColor = UIColor(named: "WhiteColor") ?? UIColor.init(hexString: "FFFFFF")
-        static let pink: UIColor = UIColor(named: "PinkColor") ?? UIColor.init(hexString: "f565d8")
+        static let orange: UIColor = UIColor(named: "orange") ?? UIColor.init(hexString: "ff8c00")
         
     }
     
